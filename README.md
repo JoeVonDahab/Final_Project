@@ -28,6 +28,7 @@ Click the link below to open the notebook in Google Colab:
 Execute the setup cells in the notebook to install required Python libraries:
 ```python
 !pip install rdkit tensorflow keras
+```
 
 ### 3. Run the Cells
 Execute the cells in sequence to:
@@ -40,9 +41,11 @@ Predict hERG blocker activity for new molecules
 Use the provided prediction functions to test new SMILES strings:
 
 you will find a cell that starts with:
+```
 # function to predict whether a molecule is a hERG blocker based on its SMILES
+```
 it has following code:
-
+```
 # function to predict whether a molecule is a hERG blocker based on its SMILES
 def predict_blocker_forest(smiles_string):
     # create fingerprint given SMILES str
@@ -56,13 +59,14 @@ new_smiles = "CC(=O)Oc1ccccc1C(=O)O"
 prediction = predict_blocker_forest(new_smiles)
 # 1 = blocker, 0 = non-blocker
 print(f"Prediction for {new_smiles}: {prediction}")
+```
 just change the smile string to the one you would like to test
 
 Authors
 Youssef Abo-Dahab as part of final project for ML course.
-Credit to my team Hanson Huang, Jackoson Sands, Su Oner
+Credit to my team: Hanson Huang, Jackoson Sands, Su Oner
 
-Happy Holiday
+Happy Holiday :)
 
 
 
